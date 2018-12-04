@@ -1,7 +1,6 @@
 {
   "name": "vfg-field-datetime-picker",
   "version": "0.1.0",
-  "private": true,
   "main": "dist/field-flat-pickr.umd.js",
   "module": "dist/field-flat-pickr.esm.js",
   "unpkg": "dist/field-flat-pickr.min.js",
@@ -18,7 +17,8 @@
     "serve:storybook": "vue-cli-service serve:storybook -p 6006 -c config/storybook",
     "test:unit": "vue-cli-service test:unit"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "@storybook/addon-actions": "4.0.0-alpha.20",
     "@storybook/addon-links": "4.0.0-alpha.20",
