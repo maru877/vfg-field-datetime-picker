@@ -1,25 +1,26 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
-import { action } from '@storybook/addon-actions'
-import { linkTo } from '@storybook/addon-links'
-
-import MyButton from '../components/MyButton.vue'
+import FieldAwesome from '../components/FieldAwesome.vue'
 
 storiesOf('Button', module)
-  .add('with text', () => ({
-    components: { MyButton },
-    template: '<my-button @click="action">Hello Button</my-button>',
-    methods: { action: action('clicked') }
-  }))
-  .add('with JSX', () => ({
-    components: { MyButton },
-    render () {
-      return <my-button onClick={this.action}>With JSX</my-button>
-    },
-    methods: { action: linkTo('Button', 'with some emoji') }
-  }))
-  .add('with some emoji', () => ({
-    components: { MyButton },
-    template: '<my-button @click="action">😀 😎 👍 💯</my-button>',
-    methods: { action: action('clicked') }
+  .add('field awsome', () => ({
+    components: { FieldAwesome },
+    template: '<vue-form-generator :schema="schema" :model="model" :options="formOptions">',
+    data: () => ({
+      schema: {
+        fields: [{
+          type: 'awesome',
+          label: 'Awesome (custom field)',
+          model: 'userName'
+        }]
+      },
+      model: {
+        userName: 'aaa'
+      },
+      formOptions: {
+        validateAfterLoad: true,
+        validateAfterChanged: true,
+        fieldIdPrefix: 'user-'
+      }
+    })
   }))
