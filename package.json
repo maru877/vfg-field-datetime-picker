@@ -1,6 +1,6 @@
 {
   "name": "vfg-field-datetime-picker",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "main": "dist/field-flat-pickr.umd.js",
   "module": "dist/field-flat-pickr.esm.js",
   "unpkg": "dist/field-flat-pickr.min.js",
@@ -18,6 +18,8 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "vue-flatpickr-component": "^8.0.0",
+    "vue-form-generator": "^2.3.2"
   },
   "devDependencies": {
     "@storybook/addon-actions": "4.0.0-alpha.20",
@@ -41,8 +43,6 @@
     "vue": "^2.5.17",
     "vue-cli-plugin-storybook": "^0.4.8",
     "vue-datetime-picker": "^0.2.1",
-    "vue-flatpickr-component": "^8.0.0",
-    "vue-form-generator": "^2.3.2",
     "vue-template-compiler": "^2.5.17"
   }
 }
