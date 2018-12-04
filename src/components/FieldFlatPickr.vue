@@ -22,7 +22,7 @@ export default {
     return {
       config: {
         wrap: true,
-        altFormat: 'M j, Y H:i',
+        altFormat: 'Y-m-d H:i',
         altInput: true,
         enableTime: true,
         dateFormat: 'Y-m-d H:i',
