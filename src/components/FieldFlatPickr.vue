@@ -12,7 +12,7 @@
 <script>
 import { abstractField } from 'vue-form-generator'
 import VueFlatPickr from 'vue-flatpickr-component'
-import 'flatpickr/dist/flatpickr.css'
+// import 'flatpickr/dist/flatpickr.css'
 import { Japanese } from 'flatpickr/dist/l10n/ja.js'
 
 export default {

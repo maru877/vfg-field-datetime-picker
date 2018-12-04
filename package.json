@@ -1,6 +1,6 @@
 {
   "name": "vfg-field-datetime-picker",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "dist/field-flat-pickr.umd.js",
   "module": "dist/field-flat-pickr.esm.js",
   "unpkg": "dist/field-flat-pickr.min.js",
