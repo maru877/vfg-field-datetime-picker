@@ -9,13 +9,13 @@ storiesOf('Button', module)
     data: () => ({
       schema: {
         fields: [{
-          type: 'awesome',
+          type: 'flat-pickr',
           label: 'Awesome (custom field)',
-          model: 'userName'
+          model: 'flatPickr'
         }]
       },
       model: {
-        userName: 'aaa'
+        flatPickr: 'aaa'
       },
       formOptions: {
         validateAfterLoad: true,
